@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crusty Crumb - Menu</title>
+    <style>
+        /* Base Styles & Elegant Typography */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #FAF6F0; /* Soft warm cream */
+            color: #2D241E; /* Deep dark chocolate/charcoal */
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        /* Header Layout */
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px 20px;
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #EAE1D4;
+        }
+        .bakery-name {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+        }
+        .bakery-meta {
+            font-size: 13px;
+            color: #7A6E65;
+            margin: 0;
+        }
+
+        /* Quick Navigation Links */
+        .nav-scroller {
+            position: sticky;
+            top: 0;
+            background-color: #FFFFFF;
+            padding: 12px;
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            white-space: nowrap;
+            border-bottom: 1px solid #EAE1D4;
+            z-index: 100;
+            box-shadow: 0 4px 6px -6px rgba(0,0,0,0.1);
+        }
+        .nav-scroller::-webkit-scrollbar { display: none; } /* Hide bar */
+        .nav-link {
+            text-decoration: none;
+            color: #2D241E;
+            background-color: #F3ECE2;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Menu Container */
+        .menu-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            padding-bottom: 80px; /* Space for footer */
+        }
+
+        /* Section Headings */
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 35px 0 5px 0;
+            color: #8C6239; /* Warm accent brown */
+            letter-spacing: 0.5px;
+        }
+        .section-subtitle {
+            font-size: 13px;
+            font-style: italic;
+            color: #7A6E65;
+            margin: 0 0 20px 0;
+        }
+
+        /* Individual Menu Items */
+        .menu-item {
+            margin-bottom: 22px;
+        }
+        .item-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .item-name {
+            margin: 0;
+            padding-right: 10px;
+        }
+        .item-price {
+            margin: 0;
+            white-space: nowrap;
+        }
+        .item-description {
+            font-size: 14px;
+            color: #61554C;
+            margin: 4px 0 0 0;
+            font-weight: 400;
+        }
+
+        /* Fixed Footer for Instagram/Socials */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #2D241E;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .footer a {
+            color: #EAE1D4;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1 class="bakery-name">The Crusty Crumb</h1>
+        <p class="bakery-meta">📍 123 Fresh Bake Lane &nbsp;|&nbsp; 📶 WiFi: CrumbGuest2026</p>
+    </div>
+
+    <!-- Category Quick Links -->
+    <div class="nav-scroller">
+        <a href="#pastries" class="nav-link">🥐 Pastries</a>
+        <a href="#breads" class="nav-link">🍞 Breads</a>
+        <a href="#savory" class="nav-link">🥪 Savory</a>
+        <a href="#sweets" class="nav-link">🍪 Sweets</a>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="menu-container">
+
+        <!-- SECTION 1 -->
+        <div id="pastries">
+            <h2 class="section-title">Morning Pastries</h2>
+            <p class="section-subtitle">Freshly baked every morning. Get them before they’re gone!</p>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <p class="item-name">01. Classic Butter Croissant</p>
+                    <p class="item-price">$4.25</p>
+                </div>
+                <p class="item-description">Flaky, golden, and layered with 100% French butter.</p>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-main">
+                    <p class="item-name">02. Pain au Chocolat</p>
+                    <p class="item-price">$4.75</p>
+                </div>
+                <p class="item-description">Our classic croissant dough stuffed with rich dark Belgian chocolate chunks.</p>
+            </div>
+            <!-- Add remaining pastry items here -->
+        </div>
+
+        <!-- SECTION 2 -->
+        <div id="breads">
+            <h2 class="section-title">Artisan Breads</h2>
+            <p class="section-subtitle">Whole loaves, sliced upon request.</p>
+            
+            <div class="menu-item">
+                <div class="item-main">
+                    <p class="item-name">08. Signature Sourdough Boulevard</p>
+                    <p class="item-price">$7.50</p>
+                </div>
+                <p class="item-description">Our 48-hour naturally fermented classic with a crisp, blistered crust.</p>
+            </div>
+            <!-- Add remaining bread items here -->
+        </div>
+
+    </div>
+
+    <!-- Sticky Footer -->
+    <div class="footer">
+        Tag us on Instagram! <a href="https://instagram.com" target="_blank">@TheCrustyCrumb</a>
+    </div>
+
+</body>
+</html>
